@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date Converter</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+        input {
+            margin-top: 5px;
+            padding: 5px;
+            width: 200px;
+        }
+        button {
+            margin-top: 15px;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+        #result {
+            margin-top: 15px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Date Converter</h1>
+    
+    <h2>Gregorian to Hijri</h2>
+    <label for="gregorian-year">Gregorian Year:</label>
+    <input type="text" id="gregorian-year" placeholder="Enter Gregorian Year">
+    
+    <label for="gregorian-month">Gregorian Month (0-11):</label>
+    <input type="text" id="gregorian-month" placeholder="Enter Gregorian Month">
+    
+    <label for="gregorian-day">Gregorian Day:</label>
+    <input type="text" id="gregorian-day" placeholder="Enter Gregorian Day">
+    
+    <button id="convert-to-hijri-btn">Convert to Hijri</button>
+    
+    <h2>Hijri to Gregorian</h2>
+    <label for="hijri-year">Hijri Year:</label>
+    <input type="text" id="hijri-year" placeholder="Enter Hijri Year">
+    
+    <label for="hijri-month">Hijri Month (0-11):</label>
+    <input type="text" id="hijri-month" placeholder="Enter Hijri Month">
+    
+    <label for="hijri-day">Hijri Day:</label>
+    <input type="text" id="hijri-day" placeholder="Enter Hijri Day">
+    
+    <button id="convert-to-gregorian-btn">Convert to Gregorian</button>
+    
+    <div id="result"></div>
+    
+    <!-- Include the HijriDate definition first -->
+    <script src="hijriDate.js"></script>
+    <!-- Include your script that uses HijriDate -->
+    <script src="script.js"></script>
+
+
+ <!-- Footer or credits section -->
+    <footer>
+
+        <p>Credits: The Hijri date functionality in this project is based on the work by <a href="https://github.com/mygulamali/mumineen_calendar_js/blob/main/source/assets/javascripts/_lib/hijri_date.js" target="_blank">mygulamali</a>.</p>
+
+
+    </footer>
+
+
+</body>
+</html>
